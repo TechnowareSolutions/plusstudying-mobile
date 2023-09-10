@@ -1,0 +1,624 @@
+{
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Matemática",
+      "modules": [
+        {
+          "id": 1,
+          "name": "Álgebra básica",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Propriedades básicas dos números"
+            },
+            {
+              "id": 2,
+              "name": "Expressões algébricas"
+            },
+            {
+              "id": 3,
+              "name": "Equações e inequações de primeiro grau"
+            },
+            {
+              "id": 4,
+              "name": "Sistemas de equações lineares"
+            },
+            {
+              "id": 5,
+              "name": "Equações e inequações de segundo grau"
+            },
+            {
+              "id": 6,
+              "name": "Funções lineares e quadráticas"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Geometria",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Ponto, reta e plano"
+            },
+            {
+              "id": 2,
+              "name": "Ângulos"
+            },
+            {
+              "id": 3,
+              "name": "Triângulos"
+            },
+            {
+              "id": 4,
+              "name": "Quadriláteros"
+            },
+            {
+              "id": 5,
+              "name": "Circunferências e círculos"
+            },
+            {
+              "id": 6,
+              "name": "Áreas e perímetros"
+            },
+            {
+              "id": 7,
+              "name": "Teorema de Pitágoras"
+            },
+            {
+              "id": 8,
+              "name": "Trigonometria"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Matemática financeira",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Juros simples e compostos"
+            },
+            {
+              "id": 2,
+              "name": "Descontos"
+            },
+            {
+              "id": 3,
+              "name": "Valor presente e futuro"
+            },
+            {
+              "id": 4,
+              "name": "Amortização de empréstimos"
+            },
+            {
+              "id": 5,
+              "name": "Rendas"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Estatística e probabilidade",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Noções básicas de estatística"
+            },
+            {
+              "id": 2,
+              "name": "Análise de dados"
+            },
+            {
+              "id": 3,
+              "name": "Distribuições de frequência"
+            },
+            {
+              "id": 4,
+              "name": "Medidas de tendência central e de dispersão"
+            },
+            {
+              "id": 5,
+              "name": "Probabilidade"
+            },
+            {
+              "id": 6,
+              "name": "Áreas e perímetros"
+            },
+            {
+              "id": 7,
+              "name": "Regra de Bayes"
+            },
+            {
+              "id": 8,
+              "name": "Distribuição normal"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Cálculo básico",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Noções básicas de cálculo diferencial e integral"
+            },
+            {
+              "id": 2,
+              "name": "Derivadas"
+            },
+            {
+              "id": 3,
+              "name": "Integrais"
+            },
+            {
+              "id": 4,
+              "name": "Aplicações do cálculo em problemas do mundo real"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Geografia",
+      "modules": [
+        {
+          "id": 1,
+          "name": "Geografia física",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Introdução à geografia física"
+            },
+            {
+              "id": 2,
+              "name": "Geologia e relevo"
+            },
+            {
+              "id": 3,
+              "name": "Climatologia e meteorologia"
+            },
+            {
+              "id": 4,
+              "name": "Hidrologia e oceanografia"
+            },
+            {
+              "id": 5,
+              "name": "Biomas e ecossistemas"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Geografia humana",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Introdução à geografia humana"
+            },
+            {
+              "id": 2,
+              "name": "População e migração"
+            },
+            {
+              "id": 3,
+              "name": "Urbanização e cidades"
+            },
+            {
+              "id": 4,
+              "name": "Desenvolvimento econômico e globalização"
+            },
+            {
+              "id": 5,
+              "name": "Agricultura e indústria"
+            },
+            {
+              "id": 6,
+              "name": "Cultura e sociedade"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Geografia política",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Introdução à geografia política"
+            },
+            {
+              "id": 2,
+              "name": "Estados, nações e fronteiras"
+            },
+            {
+              "id": 3,
+              "name": "Geopolítica e poder mundial"
+            },
+            {
+              "id": 4,
+              "name": "Relações internacionais e diplomacia"
+            },
+            {
+              "id": 5,
+              "name": "Conflitos e resolução de conflitos"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Geografia regional",
+          "topics": [
+            {
+              "id": 1,
+              "name": "América do Norte e Central"
+            },
+            {
+              "id": 2,
+              "name": "América do Sul"
+            },
+            {
+              "id": 3,
+              "name": "Europa"
+            },
+            {
+              "id": 4,
+              "name": "África"
+            },
+            {
+              "id": 5,
+              "name": "Ásia"
+            },
+            {
+              "id": 6,
+              "name": "Oceania"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "História",
+      "modules": [
+        {
+          "id": 1,
+          "name": "História Antiga",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Pré-História"
+            },
+            {
+              "id": 2,
+              "name": "Civilizações Antigas"
+            },
+            {
+              "id": 3,
+              "name": "Grécia Antiga"
+            },
+            {
+              "id": 4,
+              "name": "Roma Antiga"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Idade Média",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Queda do Império Romano"
+            },
+            {
+              "id": 2,
+              "name": "Europa Medieval"
+            },
+            {
+              "id": 3,
+              "name": "Império Bizantino"
+            },
+            {
+              "id": 4,
+              "name": "Islã Medieval"
+            },
+            {
+              "id": 5,
+              "name": "Cruzadas"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Idade Moderna",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Renascimento e Humanismo"
+            },
+            {
+              "id": 2,
+              "name": "Reforma Protestante"
+            },
+            {
+              "id": 3,
+              "name": "Descobrimentos"
+            },
+            {
+              "id": 4,
+              "name": "Absolutismo e Mercantilismo"
+            },
+            {
+              "id": 5,
+              "name": "Revolução Científica"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Idade Contemporânea",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Iluminismo e Revoluções Atlânticas"
+            },
+            {
+              "id": 2,
+              "name": "Revolução Industrial"
+            },
+            {
+              "id": 3,
+              "name": "Imperialismo e Neocolonialismo"
+            },
+            {
+              "id": 4,
+              "name": "Primeira Guerra Mundial"
+            },
+            {
+              "id": 5,
+              "name": "Revolução Russa"
+            },
+            {
+              "id": 6,
+              "name": "Crise de 1929 e ascensão do fascismo"
+            },
+            {
+              "id": 7,
+              "name": "Segunda Guerra Mundial"
+            },
+            {
+              "id": 8,
+              "name": "Guerra Fria"
+            },
+            {
+              "id": 9,
+              "name": "Descolonização e Movimentos Sociais"
+            },
+            {
+              "id": 10,
+              "name": "Globalização e sociedade pós-industrial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Física",
+      "modules": [
+        {
+          "id": 1,
+          "name": "Mecânica",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Cinemática: Movimento retilíneo uniforme e uniformemente variado, lançamento oblíquo e lançamento vertical"
+            },
+            {
+              "id": 2,
+              "name": "Dinâmica: Leis de Newton, forças de atrito, forças elásticas, trabalho e energia"
+            },
+            {
+              "id": 3,
+              "name": "Estática: Equilíbrio de corpos e sistemas de forças"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Termodinâmica",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Termometria e escalas termométricas"
+            },
+            {
+              "id": 2,
+              "name": "Dilatação térmica e coeficiente de dilatação"
+            },
+            {
+              "id": 3,
+              "name": "Calorimetria e mudanças de estado físico"
+            },
+            {
+              "id": 4,
+              "name": "Lei Zero da Termodinâmica e Equilíbrio térmico"
+            },
+            {
+              "id": 5,
+              "name": "Primeira Lei da Termodinâmica e Trabalho de uma transformação termodinâmica"
+            },
+            {
+              "id": 6,
+              "name": "Segunda Lei da Termodinâmica e Máquinas térmicas"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Ondulatória",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Ondas mecânicas e características"
+            },
+            {
+              "id": 2,
+              "name": "Ondas sonoras e audição"
+            },
+            {
+              "id": 3,
+              "name": "Ondas eletromagnéticas e espectro eletromagnético"
+            },
+            {
+              "id": 4,
+              "name": "Radiação eletromagnética e teoria corpuscular da luz"
+            },
+            {
+              "id": 5,
+              "name": "Óptica geométrica: reflexão, refração e lentes"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Eletricidade",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Eletrização e carga elétrica"
+            },
+            {
+              "id": 2,
+              "name": "Campo elétrico e lei de Coulomb"
+            },
+            {
+              "id": 3,
+              "name": "Potencial elétrico e diferença de potencial"
+            },
+            {
+              "id": 4,
+              "name": "Capacitores e energia elétrica"
+            },
+            {
+              "id": 5,
+              "name": "Corrente elétrica e circuitos elétricos"
+            },
+            {
+              "id": 6,
+              "name": "Magnetismo e campo magnético"
+            },
+            {
+              "id": 7,
+              "name": "Força magnética e Lei de Faraday"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Química",
+      "modules": [
+        {
+          "id": 1,
+          "name": "Estrutura Atômica",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Modelo atômico de Dalton"
+            },
+            {
+              "id": 2,
+              "name": "Modelo atômico de Thomson"
+            },
+            {
+              "id": 3,
+              "name": "Modelo atômico de Rutherford"
+            },
+            {
+              "id": 4,
+              "name": "Modelo atômico de Bohr"
+            },
+            {
+              "id": 5,
+              "name": "Distribuição eletrônica e tabela periódica"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Ligações Químicas",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Ligações iônicas"
+            },
+            {
+              "id": 2,
+              "name": "Ligações covalentes"
+            },
+            {
+              "id": 3,
+              "name": "Ligações metálicas"
+            },
+            {
+              "id": 4,
+              "name": "Forças intermoleculares"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Reações Químicas",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Classificação das reações químicas"
+            },
+            {
+              "id": 2,
+              "name": "Estequiometria"
+            },
+            {
+              "id": 3,
+              "name": "Balanceamento de equações químicas"
+            },
+            {
+              "id": 4,
+              "name": "Concentração de soluções"
+            },
+            {
+              "id": 5,
+              "name": "Equilíbrio químico"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Química Orgânica",
+          "topics": [
+            {
+              "id": 1,
+              "name": "Hidrocarbonetos"
+            },
+            {
+              "id": 2,
+              "name": "Grupos funcionais orgânicos"
+            },
+            {
+              "id": 3,
+              "name": "Isomeria"
+            },
+            {
+              "id": 4,
+              "name": "Reações orgânicas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
