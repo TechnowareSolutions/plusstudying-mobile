@@ -19,7 +19,6 @@ import { SubjectList } from '../../components/subjectList'
 
 export function Home({ token }) {
   const navigation = useNavigation()
-  const isFocused = useIsFocused()
 
   const [subjects, setSubjects] = useState([])
 

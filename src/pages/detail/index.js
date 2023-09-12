@@ -17,7 +17,6 @@ import { Module } from '../../components/module'
 export function Detail() {
   const route = useRoute()
   const navigation = useNavigation()
-  const isFocused = useIsFocused()
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -26,12 +25,6 @@ export function Detail() {
         : 'Detalhes da matéria'
     })
   }, [navigation, route.params?.data])
-
-  useEffect(() => {
-    navigation.getParent().setOptions({
-      tabBarStyle: { display: 'none', backgroundColor: 'transparent' }
-    })
-  }, [isFocused])
 
   function handleHelpAsked() {
     console.log('Clicou em Help')
