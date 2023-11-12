@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Ionicons, Entypo } from '@expo/vector-icons'
 
 import { LoggedStackRoutes } from './LoggedStackRoutes'
+import { ProfileStackRoutes } from './ProfileStackRoutes'
 import { Home } from '../pages/home'
 import { Detail } from '../pages/detail'
 import { Profile } from '../pages/profile'
@@ -35,7 +36,7 @@ export function Routes({ token }) {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="ProfileTab"
         options={{
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
@@ -51,7 +52,7 @@ export function Routes({ token }) {
           }
         }}
       >
-        {props => <Profile {...props} token={token} />}
+        {props => <ProfileStackRoutes {...props} token={token} />}
       </Tab.Screen>
     </Tab.Navigator>
   )

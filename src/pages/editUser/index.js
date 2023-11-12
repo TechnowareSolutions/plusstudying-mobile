@@ -1,25 +1,27 @@
+import { useState, useEffect } from 'react'
 import {
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  StatusBar,
+  Platform,
   View,
   Text,
-  StyleSheet,
-  SafeAreaView,
-  StatusBar,
-  TouchableOpacity
+  TouchableOpacity,
+  TextInput
 } from 'react-native'
-import { useNavigation, useIsFocused } from '@react-navigation/native'
+import { useIsFocused } from '@react-navigation/native'
 
 import api from '../../services/api'
-import { useState, useEffect } from 'react'
 
-export function Profile({ token }) {
+export function EditUser({ token }) {
   const isFocused = useIsFocused()
-  const navigation = useNavigation()
 
-  const [id, setId] = useState('')
   const [nome, setNome] = useState('')
   const [cpf, setCPF] = useState('')
   const [email, setEmail] = useState('')
   const [nascimento, setNascimento] = useState('')
+  const [senha, setSenha] = useState('')
 
   useEffect(() => {
     async function fetchApi() {
@@ -29,12 +31,10 @@ export function Profile({ token }) {
             Authorization: `Bearer ${token}`
           }
         })
-        setId(response.data.id)
         setNome(response.data.nome)
         setCPF(response.data.cpf)
         setEmail(response.data.email)
         setNascimento(response.data.dataNascimento)
-        setSenha(response.data.senha)
       } catch (error) {
         console.log(error)
       }
@@ -42,47 +42,66 @@ export function Profile({ token }) {
     fetchApi()
   }, [isFocused])
 
-  function handleNavigate() {
-    navigation.navigate('EditUser')
-  }
-
-  async function handleDeleteUser() {
+  async function handleUpdateData() {
     try {
-      await api.delete(`/usuario/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`
+      await api.put(
+        '/usuario',
+        {
+          nome: nome,
+          dataNascimento: nascimento,
+          cpf: cpf,
+          email: email
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
         }
-      })
+      )
     } catch (error) {
       console.log(error)
     }
   }
 
   return (
-    <SafeAreaView
+    <ScrollView
       contentContainerStyle={{ paddingBottom: 64 }}
       style={styles.container}
     >
-      <Text style={styles.title}>Perfil</Text>
-
       <Text style={styles.label}>Nome: {nome}</Text>
+      <TextInput
+        style={styles.input}
+        value={nome}
+        onChangeText={txt => setNome(txt)}
+      />
 
       <Text style={styles.label}>E-mail: {email}</Text>
+      <TextInput
+        style={styles.input}
+        keyboardType={'email-address'}
+        value={email}
+        onChangeText={txt => setEmail(txt)}
+      />
 
-      <Text style={styles.label}>CPF: {cpf}</Text>
+      <Text style={styles.label}>CPF:</Text>
+      <TextInput
+        style={styles.input}
+        keyboardType={'numeric'}
+        value={cpf}
+        onChangeText={txt => setCPF(txt)}
+      />
 
-      <Text style={styles.label}>Data de Nascimento: {nascimento}</Text>
+      <Text style={styles.label}>Data de Nascimento:</Text>
+      <TextInput
+        style={styles.input}
+        value={nascimento}
+        onChangeText={txt => setNascimento(txt)}
+      />
 
-      <TouchableOpacity style={styles.button} onPress={handleNavigate}>
-        <Text style={styles.buttonTitle}>Editar Conta</Text>
+      <TouchableOpacity style={styles.button} onPress={handleUpdateData}>
+        <Text style={styles.buttonTitle}>Salvar</Text>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={[styles.button, styles.buttonRed]}
-        onPress={handleDeleteUser}
-      >
-        <Text style={styles.buttonTitle}>Excluir Conta</Text>
-      </TouchableOpacity>
-    </SafeAreaView>
+    </ScrollView>
   )
 }
 
@@ -105,7 +124,19 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 16,
+    fontWeight: '500',
     marginBottom: 8
+  },
+  input: {
+    backgroundColor: '#FFF',
+    borderRadius: 20,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingRight: 16,
+    paddingLeft: 16,
+    marginBottom: 34,
+    borderWidth: 1,
+    borderColor: 'gray'
   },
   button: {
     backgroundColor: '#1A7FDD',
@@ -116,9 +147,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignSelf: 'center',
     marginTop: 24
-  },
-  buttonRed: {
-    backgroundColor: '#dc2626'
   },
   buttonTitle: {
     fontSize: 16,

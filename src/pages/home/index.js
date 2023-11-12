@@ -24,7 +24,7 @@ export function Home({ token }) {
 
   useEffect(() => {
     async function fetchApi() {
-      const response = await api.get('/subjects')
+      const response = await api.get('/materia')
       setSubjects(response.data)
     }
     fetchApi()

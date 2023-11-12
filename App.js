@@ -6,7 +6,7 @@ import { Routes } from './src/routes'
 import { NotLoggedStackRoutes } from './src/routes/NotLoggedStackRoutes'
 
 export default function App() {
-  const [token, setToken] = useState('')
+  const [token, setToken] = useState('a')
 
   function onLogIn(token) {
     setToken(token)

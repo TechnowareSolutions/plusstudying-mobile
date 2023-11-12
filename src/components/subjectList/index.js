@@ -10,8 +10,16 @@ export function SubjectList({ data }) {
     navigation.navigate('Detail', { data: data })
   }
 
-  function handleRemoveSubject() {
-    console.log('Clicou em Remove Subject')
+  async function handleRemoveSubject() {
+    try {
+      await api.delete(`/materia/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (
